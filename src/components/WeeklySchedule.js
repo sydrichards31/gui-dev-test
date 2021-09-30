@@ -334,15 +334,15 @@ const WeeklySchedule = ({week, setWeek, addedDays, setAddedDays, scheduleComplet
     return (
       <div className="table-wrapper">
           <div className="fromTo">
-            <label className="headLabel" style={{paddingRight: "30px"}}>FROM</label>
+            <label className="headLabel" style={{paddingRight: "40px"}}>FROM</label>
             <label className="headLabel">TO</label>
           </div>
         <table id='schedule'>
             <tbody>
-                <tr>
-                    <td>Monday</td>
-                    <td>
-                        <table className="selector" style={{border: "1px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
+                <tr style={{margin: "0px", borderCollapse: "collapse", borderStyle: "none"}}>
+                    <td style={{fontSize: "18px", width: "125px", fontFamily: "Annie Use Your Telescope"}}>Monday</td>
+                    <td style={{margin: "0px"}}>
+                        <table className="selector" style={{border: "2px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
                             <tbody>
                                 <tr>
                                     <td className={week.mondayStart.length > 1 ? "double" : "single"}>{week.mondayStart}</td>
@@ -369,9 +369,9 @@ const WeeklySchedule = ({week, setWeek, addedDays, setAddedDays, scheduleComplet
                     </td>
                 </tr>
                 <tr>
-                    <td>Tuesday</td>
+                    <td style={{fontSize: "18px", width: "125px", fontFamily: "Annie Use Your Telescope"}}>Tuesday</td>
                     <td>
-                        <table className="selector"  style={{border: "1px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
+                        <table className="selector"  style={{border: "2px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
                             <tbody>
                                 <tr>
                                     <td className={week.tuesdayStart.length > 1 ? "double" : "single"}>{week.tuesdayStart}</td>
@@ -398,9 +398,9 @@ const WeeklySchedule = ({week, setWeek, addedDays, setAddedDays, scheduleComplet
                     </td>
                 </tr>
                 <tr>
-                    <td>Wednesday</td>
+                    <td style={{fontSize: "18px", width: "125px", fontFamily: "Annie Use Your Telescope"}}>Wednesday</td>
                     <td>
-                        <table className="selector"  style={{border: "1px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
+                        <table className="selector"  style={{border: "2px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
                             <tbody>
                                 <tr>
                                     <td className={week.wednesdayStart.length > 1 ? "double" : "single"}>{week.wednesdayStart}</td>
@@ -427,9 +427,9 @@ const WeeklySchedule = ({week, setWeek, addedDays, setAddedDays, scheduleComplet
                     </td>
                 </tr>
                 <tr>
-                    <td>Thursday</td>
+                    <td style={{fontSize: "18px", width: "125px", fontFamily: "Annie Use Your Telescope"}}>Thursday</td>
                     <td>
-                        <table className="selector"  style={{border: "1px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
+                        <table className="selector"  style={{border: "2px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
                             <tbody>
                                 <tr>
                                     <td className={week.thursdayStart.length > 1 ? "double" : "single"}>{week.thursdayStart}</td>
@@ -456,9 +456,9 @@ const WeeklySchedule = ({week, setWeek, addedDays, setAddedDays, scheduleComplet
                     </td>
                 </tr>
                 <tr>
-                    <td>Friday</td>
+                    <td style={{fontSize: "18px", width: "125px", fontFamily: "Annie Use Your Telescope"}}>Friday</td>
                     <td>
-                        <table className="selector"  style={{border: "1px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
+                        <table className="selector"  style={{border: "2px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
                             <tbody>
                                 <tr>
                                     <td className={week.fridayStart.length > 1 ? "double" : "single"}>{week.fridayStart}</td>
@@ -485,9 +485,9 @@ const WeeklySchedule = ({week, setWeek, addedDays, setAddedDays, scheduleComplet
                     </td>
                 </tr>
                 <tr>
-                    <td>Saturday</td>
+                    <td style={{fontSize: "18px", width: "125px", fontFamily: "Annie Use Your Telescope"}}>Saturday</td>
                     <td>
-                        <table className="selector"  style={{border: "1px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
+                        <table className="selector"  style={{border: "2px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
                             <tbody>
                                 <tr>
                                     <td className={week.saturdayStart.length > 1 ? "double" : "single"}>{week.saturdayStart}</td>
@@ -514,9 +514,9 @@ const WeeklySchedule = ({week, setWeek, addedDays, setAddedDays, scheduleComplet
                     </td>
                 </tr>
                 <tr>
-                    <td>Sunday</td>
+                    <td style={{fontSize: "18px", width: "125px", fontFamily: "Annie Use Your Telescope"}}>Sunday</td>
                     <td>
-                        <table className="selector"  style={{border: "1px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
+                        <table className="selector"  style={{border: "2px solid black", borderSpacing: "0px", borderCollapse: "collapse"}}>
                             <tbody>
                                 <tr>
                                     <td className={week.sundayStart.length > 1 ? "double" : "single"}>{week.sundayStart}</td>

@@ -114,17 +114,42 @@ function App() {
   }
 
   return (
-    <div>
-      <Toggle shiftType={shiftType} setShiftType={setShiftType}/>
-      <Description setDescription={setDescription} setDescriptionComplete={setDescriptionComplete} />
-      <ExpirationDatePicker expirationDate={expirationDate} setExpirationDate={setExpirationDate} setExpirationComplete={setExpirationComplete} />
-      <ScrollableList nameList={nameList} setTechLead={setTechLead} setLeadComplete={setLeadComplete}/>
-      <ProgressBar progress={progress} />
-      <TechLead techLead={techLead} />
-      <WeeklySchedule week={week} setWeek={setWeek} addedDays={addedDays} setAddedDays={setAddedDays} scheduleComplete={scheduleComplete} setScheduleComplete={setScheduleComplete} />
-      <button disabled={submitDisabled} className="submitBtn" onClick={submit}>Submit</button>
-      <button onClick={printValues}>Print Values</button>
+    <div className="parent">
+
+      <div className="left">
+        <Toggle shiftType={shiftType} setShiftType={setShiftType}/>
+        <table>
+          <tbody>
+            <tr>
+              <td><WeeklySchedule week={week} setWeek={setWeek} addedDays={addedDays} setAddedDays={setAddedDays} scheduleComplete={scheduleComplete} setScheduleComplete={setScheduleComplete} /></td>
+              <td style={{paddingLeft: "1vw"}}>
+                <TechLead techLead={techLead} />
+                <br></br><br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br><br></br>
+                <ExpirationDatePicker expirationDate={expirationDate} setExpirationDate={setExpirationDate} setExpirationComplete={setExpirationComplete} />
+
+              </td>
+            </tr>
+            <tr>
+              <Description setDescription={setDescription} setDescriptionComplete={setDescriptionComplete} />
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+
+      <div className="right">
+        <ScrollableList nameList={nameList} setTechLead={setTechLead} setLeadComplete={setLeadComplete}/>
+      </div>
+      <div className="progress">
+        <ProgressBar progress={progress} />
+        <br></br>
+      </div>
+      <div className="footer">
+        <button disabled={submitDisabled} style={{fontFamily: "Annie Use Your Telescope", fontSize: "18px"}} className="submitBtn" onClick={submit}>Submit</button>
+      </div>
     </div>
+      // {/* <button onClick={printValues}>Print Values</button> */}
   );
 }
 

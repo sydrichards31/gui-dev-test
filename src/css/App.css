@@ -1,6 +1,50 @@
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left {
+    margin-top: 20px;
+    width: 50%;
+} 
+
+.right {
+    margin-top: 60px;
+    width: 25%;
+} 
+
+.progress {
+    margin: auto;
+    padding-right: 15%;
+}
+
+.footer {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-right: 15%;
+}
+
+.leftleft {
+    float: left;
+    width: 60%;
+}
+
+.leftright {
+    float: right;
+}
+
+
 .submitBtn {
     background-color: black;
     color: white;
+    width: 10%;
+    height: 35px;
+    border: none;
 }
 
 .submitBtn:hover {

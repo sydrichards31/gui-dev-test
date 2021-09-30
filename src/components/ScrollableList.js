@@ -34,15 +34,23 @@ const ScrollableList = ({nameList, setTechLead, setLeadComplete}) => {
 
     return (
         <div className="App">
-          <Card style={{ height: "230px", width: "225px" }}>
-          <SearchBar value={searched} onChange={ (searchVal) => { requestSearch(searchVal)}} onCancelSearch={() => cancelSearch()} style={{height: "35px"}} placeholder="Search for Tech Lead"/>
-            <Box>            
+          <div style={{width: "275px"}}>
+            <SearchBar value={searched} className="search" onChange={ (searchVal) => { requestSearch(searchVal)}} onCancelSearch={() => cancelSearch()} style={{height: "35px"}} placeholder="Search for Tech Lead"/>
+          </div>
+          <p><br></br></p>
+          <Card style={{ height: "296px", width: "275px", borderRadius: "0px"}}>
+            <Box
+              style={{
+                border: "2px solid black",
+                padding: "1px"
+              }}
+            >            
               <Box
                 bgcolor="white"
                 style={{
                   overflowY: "auto",
-                  height: "215px",
-                  width: "215px",
+                  height: "270px",
+                  width: "250px",
                   display: "flex",
                   flexGrow: 1,
                   flexDirection: "column",
@@ -57,10 +65,11 @@ const ScrollableList = ({nameList, setTechLead, setLeadComplete}) => {
                         justifyContent="space-between"
                         alignItems="center"
                         marginLeft="10px"
-                        fontSize="12px"
-                        height="30px"
+                        fontSize="15px"
+                        height="45px"
+                        
                       >
-                        <p className="listItems" style={{cursor: "pointer"}} onClick={() => changeName(name)}>{name}</p>
+                        <p className="listItems" style={{cursor: "pointer", fontSize: "18px", fontFamily: "Annie Use Your Telescope"}} onClick={() => changeName(name)}>{name}</p>
                       </Box>
                       <Divider />
                     </>

@@ -4,13 +4,14 @@
 
 .fromTo {
     display: flex;
-    padding-left: 85px;
+    padding-left: 150px;
     margin-bottom: 0px;
+    font-family: 'Annie Use Your Telescope', cursive;
 }
 
 .headLabel {
-    font-size: 14px;
-    color: #444444;
+    font-size: 17px;
+    color: black;
 }
 
 .double {
@@ -25,7 +26,8 @@
 }
 
 #schedule {
-    border: 1px solid black;
+    border: 2px solid black;
+    border-collapse: collapse;
     table-layout: inherit;
     padding: 0px;
 } 
@@ -37,6 +39,7 @@
 
 #selector {
     margin: 0px;
+    border-collapse: collapse;
 }
 
 #selector body{
@@ -48,7 +51,7 @@
 }
 
 .arrowRow {
-    border: 1px solid black;
+    border: 2px solid black;
     width: 100%;
     text-align: 02;
 }

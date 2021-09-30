@@ -11,8 +11,8 @@ const Toggle = ({shiftType, setShiftType}) => {
 
     return (
         <div className="buttonContainer">
-            <Button className={shiftType === "Regular" ? "active" : "inactive"} onClick={changeButton}>Regular</Button>
-            <Button className={shiftType === "Extra" ? "active" : "inactive"} onClick={changeButton}>Extra</Button>
+            <Button style={{width: "180px", height: "35px", fontSize: "18px"}} className={shiftType === "Regular" ? "active" : "inactive"} onClick={changeButton}>Regular</Button>
+            <Button style={{width: "180px", height: "35px", fontSize: "18px"}} className={shiftType === "Extra" ? "active" : "inactive"} onClick={changeButton}>Extra</Button>
         </div>   
     )    
 };
