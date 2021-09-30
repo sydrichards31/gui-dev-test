@@ -1,0 +1,63 @@
+.tableWrapper {
+    display: flex;
+}
+
+.fromTo {
+    display: flex;
+    padding-left: 85px;
+    margin-bottom: 0px;
+}
+
+.headLabel {
+    font-size: 14px;
+    color: #444444;
+}
+
+.double {
+    text-align: center;
+    font-size: 14px;
+    width: 14px;
+}
+.single {
+    text-align: center;
+    font-size: 14px;
+    width: 14px;
+}
+
+#schedule {
+    border: 1px solid black;
+    table-layout: inherit;
+    padding: 0px;
+} 
+
+#schedule td {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+#selector {
+    margin: 0px;
+}
+
+#selector body{
+    margin: 0px;
+}
+
+#selector td {
+    border: none;
+}
+
+.arrowRow {
+    border: 1px solid black;
+    width: 100%;
+    text-align: 02;
+}
+
+.upIcon {
+    padding-right: 9px;
+    padding-top: 2px;
+}
+.downIcon {
+    padding-right: 9px;
+    padding-top: 5px;
+}

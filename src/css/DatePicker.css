@@ -1,0 +1,20 @@
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  .expLabel {
+      margin-left: 5px;
+      font-size: 13px;
+  }
+  
+  .input-container .react-datepicker-wrapper {
+    margin: 2px 0;
+    width: 100%;
+  }
+  
+  .input-container .react-datepicker-wrapper input {
+    padding: 4px 12px;
+  }

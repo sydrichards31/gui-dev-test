@@ -1,0 +1,8 @@
+.submitBtn {
+    background-color: black;
+    color: white;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+}

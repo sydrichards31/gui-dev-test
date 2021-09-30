@@ -1,0 +1,12 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+li {
+    text-decoration: none;
+}
+
+.listItems:hover {
+    cursor: pointer;
+}

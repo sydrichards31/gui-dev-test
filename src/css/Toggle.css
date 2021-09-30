@@ -1,0 +1,26 @@
+.buttonContainer {
+    display: flex;
+}
+
+.inactive {
+    color: #008080;
+    background-color: white;
+    border-radius: 0;
+    margin: 0;
+}
+
+.active {
+    background-color: #008080;
+    color: white;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* #left {
+
+    margin-right: 0;
+}
+
+#right {
+    margin-left: 0;
+} */

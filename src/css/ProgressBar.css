@@ -1,0 +1,8 @@
+ 
+.container {
+    height: 20px;
+    width: 220px;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 20px; 
+}
